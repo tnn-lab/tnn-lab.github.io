@@ -249,7 +249,7 @@ footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.7rem; 
 
 
 /* Home page redesign */
-.home-hero { padding:0 0 88px; }
+.home-hero { display:block; min-height:0; padding:0 0 88px; }
 .home-hero-heading { width:100%; box-sizing:border-box; margin:0; padding:88px 28px 54px; text-align:center; }
 .home-eyebrow { margin:0 0 18px; color:var(--teal); font-size:.78rem; font-weight:800; letter-spacing:.16em; text-transform:none; }
 .home-hero-heading h1 { margin:0; color:var(--navy-deep); font-family:var(--serif); font-size:clamp(2.5rem,5.2vw,4rem); line-height:1.1; letter-spacing:-.035em; }
