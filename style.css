@@ -249,12 +249,12 @@ footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.7rem; 
 
 
 /* Home page redesign */
-.home-hero { padding:0 28px 88px; }
-.home-hero-heading { max-width:1124px; margin:0 auto; padding:88px 0 54px; text-align:center; }
+.home-hero { padding:0 0 88px; }
+.home-hero-heading { width:100%; box-sizing:border-box; margin:0; padding:88px 28px 54px; text-align:center; }
 .home-eyebrow { margin:0 0 18px; color:var(--teal); font-size:.78rem; font-weight:800; letter-spacing:.16em; text-transform:none; }
 .home-hero-heading h1 { margin:0; color:var(--navy-deep); font-family:var(--serif); font-size:clamp(2.5rem,5.2vw,4rem); line-height:1.1; letter-spacing:-.035em; }
 .home-hero-heading h1 em { color:var(--teal); font-style:normal; }
-.home-intro { max-width:1000px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center; }
+.home-intro { width:min(1124px, calc(100% - 56px)); margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center; }
 .home-intro-visual { position:relative; min-height:380px; display:grid; place-items:center; }
 .home-intro-visual img { position:relative; z-index:2; width:min(100%,390px); border-radius:50%; box-shadow:0 20px 55px rgba(18,59,97,.14); }
 .home-intro-visual .logo-orbit { position:absolute; width:360px; height:360px; border:1px solid rgba(21,154,145,.28); border-radius:50%; }
@@ -296,8 +296,9 @@ footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.7rem; 
   .research-glance-grid article:last-child { border-bottom:0; }
 }
 @media (max-width:720px) {
-  .home-hero { padding:0 20px 65px; }
-  .home-hero-heading { padding:65px 0 40px; }
+  .home-hero { padding:0 0 65px; }
+  .home-hero-heading { padding:65px 20px 40px; }
+  .home-intro { width:calc(100% - 40px); }
   .home-eyebrow { font-size:.68rem; letter-spacing:.11em; }
   .home-hero-heading h1 { font-size:2.35rem; }
   .home-intro { gap:30px; }
