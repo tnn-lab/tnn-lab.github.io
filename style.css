@@ -83,7 +83,7 @@ img { max-width: 100%; display: block; }
 }
 .hero h1 {
   font-family:var(--serif);
-  font-size:clamp(2.6rem, 5.2vw, 5rem);
+  font-size:clamp(2.08rem, 4.16vw, 4rem);
   line-height:1.1;
   letter-spacing:-.035em;
   margin:0 0 24px;
@@ -220,7 +220,7 @@ footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.7rem; 
   .brand small { display:none; }
   .section { padding:75px 20px; }
   .hero-grid { padding:50px 20px 65px; gap:35px; }
-  .hero h1 { font-size:2.55rem; }
+  .hero h1 { font-size:2.04rem; }
   .research-grid { grid-template-columns:1fr; }
   .research-card { min-height:0; }
   .project { grid-template-columns:38px 1fr; }
