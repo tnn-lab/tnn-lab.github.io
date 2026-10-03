@@ -199,7 +199,13 @@ img { max-width: 100%; display: block; }
 .opportunity-list span { color:var(--muted); font-size:.76rem; }
 
 .contact-section { max-width:none; background:linear-gradient(135deg,#eaf6f4,#f6f8fa); }
-.contact-grid { display:grid; grid-template-columns:1fr .75fr; gap:80px; align-items:center; }
+.contact-grid { display:grid; grid-template-columns:1fr 1.15fr; gap:70px; align-items:center; }
+.contact-boxes { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.contact-box-ink { background:#fff; color:var(--navy-deep); border:1px solid var(--line); }
+.contact-box-ink p { color:var(--muted); }
+.contact-box-ink .contact-label { color:var(--teal); }
+.contact-box-ink a { color:var(--navy-deep); font-weight:700; }
+.ink-logo-placeholder { height:115px; display:flex; align-items:center; justify-content:center; margin:18px 0 8px; border-radius:6px; background:#f4f7f8; color:#123b61; font-family:var(--serif); font-size:2rem; letter-spacing:.12em; }
 .contact-grid h2 { font-family:var(--serif); font-size:clamp(2.2rem,4vw,3.6rem); line-height:1.15; margin:0 0 18px; }
 .contact-lead { color:var(--muted); }
 .email { display:inline-block; margin-top:7px; color:var(--navy); font-weight:700; border-bottom:2px solid var(--teal); padding-bottom:3px; }
@@ -217,6 +223,7 @@ footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.7rem; 
   .hero-mark { justify-self:center; max-width:430px; }
   .research-grid { grid-template-columns:repeat(2,1fr); }
   .two-col, .people-grid, .team-grid, .opportunity-grid, .contact-grid { grid-template-columns:1fr; gap:35px; }
+.contact-boxes { grid-template-columns:1fr; }
 }
 @media (max-width: 720px) {
   .nav { display:none; position:absolute; top:74px; left:0; right:0; padding:16px 28px 22px; background:#fff; border-bottom:1px solid var(--line); flex-direction:column; align-items:flex-start; }
