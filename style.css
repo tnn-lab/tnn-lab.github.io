@@ -394,6 +394,6 @@ footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.805rem
 }
 
 /* WhatsApp contact */
-.whatsapp-contact { display:flex; align-items:center; gap:9px; margin-top:14px; color:#25D366; font-weight:700; font-size:.95rem; text-decoration:none; }
+.whatsapp-contact { display:flex; align-items:center; gap:9px; margin-top:14px; color:var(--navy-deep); font-weight:700; font-size:.95rem; text-decoration:none; }
 .whatsapp-contact:hover { text-decoration:underline; }
-.whatsapp-icon { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:50%; background:#25D366; color:#fff; font-size:.72rem; font-weight:800; }
+.whatsapp-icon { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; color:var(--navy-deep); }\n.whatsapp-icon svg { width:22px; height:22px; fill:currentColor; }
