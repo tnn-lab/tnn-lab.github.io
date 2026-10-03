@@ -207,6 +207,8 @@ img { max-width: 100%; display: block; }
 .contact-label { color:#62c9c1; letter-spacing:.16em; font-size:.65rem; font-weight:700; }
 .contact-box h3 { font-family:var(--serif); font-size:1.55rem; line-height:1.45; margin:17px 0; }
 .contact-box p { color:#b9c9d6; font-size:.8rem; }
+.contact-logo { margin-top:45px; text-align:center; }
+.contact-logo img { width:min(260px,70%); height:auto; display:inline-block; }
 
 footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.7rem; }
 .footer-inner { max-width:1124px; margin:auto; display:flex; justify-content:space-between; gap:20px; }
