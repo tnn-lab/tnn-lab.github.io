@@ -49,7 +49,7 @@ img { max-width: 100%; display: block; }
 .brand img { width: 48px; height:48px; object-fit:cover; border-radius:50%; }
 .brand strong { display:block; font-size:1.05rem; letter-spacing:.02em; }
 .brand small { display:block; color:var(--muted); font-size:.67rem; margin-top:-2px; }
-.nav { display:flex; gap:23px; align-items:center; font-size:.78rem; font-weight:600; }
+.nav { display:flex; gap:23px; align-items:center; font-size:.897rem; font-weight:600; }
 .nav a { color:#44596c; }
 .nav a:hover { color:var(--teal); }
 .menu-toggle { display:none; border:0; background:none; font-size:1.5rem; color:var(--navy); }
@@ -210,7 +210,7 @@ img { max-width: 100%; display: block; }
 .contact-logo { margin-top:45px; text-align:center; }
 .contact-logo img { width:min(260px,70%); height:auto; display:inline-block; }
 
-footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.7rem; }
+footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.805rem; }
 .footer-inner { max-width:1124px; margin:auto; display:flex; justify-content:space-between; gap:20px; }
 
 @media (max-width: 900px) {
