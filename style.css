@@ -397,3 +397,236 @@ footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.805rem
 .whatsapp-contact { display:flex; align-items:center; gap:9px; margin-top:14px; color:var(--navy-deep); font-weight:700; font-size:.95rem; text-decoration:none; }
 .whatsapp-contact:hover { text-decoration:underline; }
 .whatsapp-icon { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; color:var(--navy-deep); }\n.whatsapp-icon svg { width:22px; height:22px; fill:currentColor; }
+
+
+/* Mobile optimisation pass */
+@media (max-width: 720px) {
+  html { overflow-x: hidden; }
+  body { overflow-x: hidden; }
+
+  .site-header { position: sticky; }
+  .nav-wrap {
+    min-height: 68px;
+    padding: 10px 16px;
+    gap: 12px;
+  }
+  .brand {
+    min-width: 0;
+    gap: 10px;
+  }
+  .brand img { width: 42px; height: 42px; }
+  .brand strong { font-size: .98rem; }
+  .menu-toggle {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    font-size: 1.55rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .nav {
+    top: 68px;
+    padding: 8px 16px 14px;
+    gap: 0;
+    box-shadow: 0 12px 28px rgba(11,41,69,.10);
+  }
+  .nav a {
+    width: 100%;
+    padding: 11px 4px;
+    font-size: .92rem;
+    border-bottom: 1px solid #edf2f5;
+  }
+  .nav a:last-child { border-bottom: 0; }
+
+  .page-hero-inner {
+    padding: 52px 20px 48px;
+  }
+  .page-hero h1 {
+    font-size: clamp(1.9rem, 8.5vw, 2.55rem);
+    line-height: 1.16;
+    max-width: 100%;
+  }
+  .eyebrow {
+    font-size: .62rem;
+    letter-spacing: .14em;
+    margin-bottom: 12px;
+  }
+
+  .section { padding: 58px 20px; }
+  .section-heading { margin-bottom: 32px; }
+  .section-heading h2 {
+    font-size: clamp(1.75rem, 7.5vw, 2.25rem);
+    line-height: 1.2;
+  }
+
+  .home-hero { padding: 0 0 52px; }
+  .home-hero-heading { padding: 50px 18px 30px; }
+  .home-eyebrow {
+    font-size: .66rem;
+    letter-spacing: .08em;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .home-hero-heading h1 {
+    font-size: clamp(2rem, 9.5vw, 2.65rem);
+    line-height: 1.16;
+  }
+  .home-intro {
+    width: calc(100% - 32px);
+    gap: 26px;
+  }
+  .home-intro-visual {
+    min-height: 235px;
+  }
+  .home-intro-visual img {
+    width: min(72vw, 270px);
+  }
+  .home-intro-visual .logo-orbit {
+    width: min(74vw, 250px);
+    height: min(74vw, 250px);
+  }
+  .home-intro-copy { padding: 0; }
+  .home-intro-copy .lead {
+    font-size: .98rem;
+    line-height: 1.75;
+  }
+  .home-location {
+    margin-top: 16px;
+    font-size: .72rem;
+  }
+  .hero-actions {
+    margin: 24px 0 0;
+    gap: 10px;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 16px;
+  }
+
+  .pillar-grid { gap: 14px; }
+  .pillar { padding: 23px; }
+  .pillar-number { margin-bottom: 14px; }
+  .pillar h3 { font-size: 1.38rem; }
+
+  .research-glance-grid article {
+    padding: 24px 4px;
+  }
+
+  .home-why h2 {
+    font-size: clamp(1.85rem, 8vw, 2.35rem);
+  }
+  .home-why-grid { gap: 32px; }
+
+  .home-team-inner { gap: 28px; }
+  .home-team h2 {
+    font-size: clamp(1.8rem, 7.8vw, 2.3rem);
+  }
+
+  .contact-grid { gap: 28px; }
+  .contact-grid h2 {
+    font-size: clamp(1.9rem, 8vw, 2.45rem);
+  }
+  .contact-box {
+    padding: 27px 23px;
+  }
+  .contact-box h3 { font-size: 1.3rem; }
+  .email, .whatsapp-contact {
+    font-size: .9rem;
+  }
+
+  .academy-hero-copy {
+    font-size: .92rem;
+    line-height: 1.7;
+    margin-top: 18px;
+  }
+  .academy-intro {
+    gap: 28px;
+  }
+  .academy-intro h2 {
+    font-size: clamp(1.8rem, 7.5vw, 2.25rem);
+  }
+  .academy-intro > div:last-child p {
+    line-height: 1.7;
+  }
+  .academy-note { padding: 16px 17px; }
+  .academy-grid { gap: 14px; }
+  .academy-card {
+    padding: 21px;
+    border-radius: 7px;
+  }
+  .academy-card-top {
+    margin-bottom: 17px;
+  }
+  .academy-card h3 {
+    font-size: 1.28rem;
+    line-height: 1.35;
+  }
+  .academy-description {
+    font-size: .82rem;
+    line-height: 1.65;
+    margin-bottom: 16px;
+  }
+  .academy-perspective {
+    padding: 15px 16px;
+    margin-bottom: 16px;
+  }
+  .academy-perspective p {
+    font-size: .76rem;
+  }
+  .academy-learn ul {
+    font-size: .75rem;
+    line-height: 1.7;
+  }
+  .academy-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 14px;
+  }
+
+  .project {
+    grid-template-columns: 34px 1fr;
+    gap: 12px;
+    padding: 22px 0;
+  }
+  .project h3 { font-size: 1.2rem; }
+  .project p { font-size: .8rem; }
+  .project-type {
+    grid-column: 2;
+    white-space: normal;
+  }
+
+  .team-grid,
+  .people-grid,
+  .opportunity-grid { gap: 18px; }
+  .person-card {
+    padding: 22px;
+    gap: 16px;
+  }
+  .avatar {
+    width: 76px;
+    height: 76px;
+    font-size: 1.35rem;
+  }
+  .person-card h3 { font-size: 1.3rem; }
+  .person-card p { font-size: .82rem; }
+
+  .publication-placeholder {
+    padding: 23px;
+    align-items: flex-start;
+  }
+
+  .opportunity-list div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 0;
+  }
+
+  .footer-inner {
+    gap: 7px;
+    font-size: .78rem;
+  }
+}
