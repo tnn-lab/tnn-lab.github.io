@@ -632,8 +632,9 @@ footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.805rem
 }
 
 
-/* TNN Lab contact actions */
-.call-contact { display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; margin-top:14px; color:var(--navy-deep); text-decoration:none; vertical-align:middle; }
-.call-icon { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; }
-.call-icon svg { width:22px; height:22px; fill:currentColor; }
+/* TNN Lab contact actions: compact, inline call and WhatsApp controls */
+.contact-actions { display:flex; align-items:center; gap:12px; margin-top:14px; }
+.call-contact { display:inline-flex; align-items:center; justify-content:center; flex:0 0 22px; width:22px; height:22px; color:var(--navy-deep); text-decoration:none; }
+.call-contact svg { display:block; width:22px; height:22px; max-width:22px; max-height:22px; fill:currentColor; }
 .call-contact:hover { color:var(--teal); }
+.contact-actions .whatsapp-contact { margin-top:0; }
