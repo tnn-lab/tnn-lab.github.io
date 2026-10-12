@@ -630,3 +630,10 @@ footer { background:#071e33; color:#aebdca; padding:20px 28px; font-size:.805rem
     font-size: .78rem;
   }
 }
+
+
+/* TNN Lab contact actions */
+.call-contact { display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; margin-top:14px; color:var(--navy-deep); text-decoration:none; vertical-align:middle; }
+.call-icon { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; }
+.call-icon svg { width:22px; height:22px; fill:currentColor; }
+.call-contact:hover { color:var(--teal); }
